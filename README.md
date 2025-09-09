@@ -22,22 +22,30 @@
                                                                                  
 # :hear_no_evil:  First of all, what is Mine Colab [Improved]?
 
-Mine Colab [Improved] is an alternative [Minecolab project](https://github.com/thecoder-001/MineColab) that helps to build a Minecraft server on your own Gdrive. It is easier to use and more flexible to edit. This project is suited for mainly [google colab](https://colab.research.google.com) (a free service based on [jupyter notebook](https://jupyter.org/) and [ubuntu](https://ubuntu.com) os), though this can be applied on other projects like [jupyter lab](https://jupyter.org/try-jupyter/lab/), [deepnote](https://deepnote.com/), etc. This project followed the [GNU License](https://github.com/N-aksif-N/Minecolab/blob/master/LICENSE). Before looking closer, please make sure to see [the original](https://github.com/thecoder-001/MineColab)
+Mine Colab [Improved] is an alternative [Minecolab project](https://github.com/thecoder-001/MineColab) that helps to build a Minecraft server on your own [Google Drive](https://workspace.google.com/intl/es/products/drive). It is easier to use and more flexible to edit. This project is suited mainly for [Google Colab](https://colab.research.google.com), a paid service of Google with free plans based on [Jupyter Notebook](https://jupyter.org/) and [Ubuntu](https://ubuntu.com) OS. Anyway, this notebook can be used on other projects like [Jupyter Lab](https://jupyter.org/try-jupyter/lab/), [Deepnote](https://deepnote.com/), etc... taking into account it may require some modifications depending on the service. This project follows the [GNU License](https://github.com/N-aksif-N/Minecolab/blob/master/LICENSE). Before looking closer to it, please make sure to take a look into [the original project by thecoder-001](https://github.com/thecoder-001/MineColab)
 
 # :moneybag:  Can Minecolab server online 24/7?
 
-Of course, it's possible but with a little hard work. Google Colab is a free service and it is not suited for 24/7 online so you can use [deepnote](https://deepnote.com/) instead. Or if you still want to use google collab you may need some tricks or friends to make the web online and accept the captcha manually.
+Of course, it's possible but with a little hard work. Google Colab is a free service and it is not suited for 24/7, but 12 hours online so in the case you want your server to be accesible 24/7 you could use [Deepnote](https://deepnote.com/) instead.
+> [!WARNING]  
+> Take into account that when using **Deepnote** some modifications to the internal code of the notebook might be required.
+
+If you still want to use Google Colab take into account that your server uptime will depend on Google Colab's actual usage of their servers and you may need to use some tricks that we will not provide (sorry) or friends to make the web online and accept the captcha manually. 
+> [!TIP]  
+> We suggest to take into account that your server will elap around 10 hours. Being in that case sure that your server will not be forced stopped by Google Colab unless they require your resources for a paid or uncommon user.
 
 # :page_with_curl: Instructions
-- Open the notebook in Google Colab.
-- RUN THE SET-UP CELL (important)
-- Read through the notebook, most of the code is self-explanatory. Run the cells that are useful for your use case.
+1. Open the notebook in Google Colab.
+2. Run the SET-UP CELL (important)
+3. Read through the notebook, most of the cells are self-explanatory with easy-reading and for-all markdown (information of what the cells do). Run the cells that are useful for your use case.
+> [!IMPORTANT]  
+> Remember that you can take a look to our [whole wiki](https://minecolabimproved-wiki-gg.translate.goog/es/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp) in the case you need some information or just want to be updated of what does each section of the notebook.
 
-**Create Minecraft server**
+**Create your own Minecraft server**
 > [!TIP]  
 > Use a TPU runtime if possible and select the best [Tunneling Service](https://minecolabimproved-wiki-gg.translate.goog/es/wiki/Servicios_de_Tunneling?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp) that fits with you to have the best performance.
-1. Run the cell that creates the Minecraft server.
-2. After that, you have five options. You can either use Ngrok, PlayIt, or Cloudflare's Argo. Ngrok, Localtonet is easy to set up and doesn't require anything to be installed by the clients but it can often be quite unreliable. Argo doesn't have such limitations but requires a bit more work. Playit, Zrok may get bugged at this point but it is more reliable and does not require any hard work.
+1. Run the cell that creates the Minecraft server. [More info here](https://minecolabimproved-wiki-gg.translate.goog/es/wiki/Celda_Starting?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp).
+2. After that, select your prefered tunneling service, complete it's steps and connect to your server! [Take a look to the wiki](https://minecolabimproved-wiki-gg.translate.goog/es/wiki/Servicios_de_Tunneling?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp&_x_tr_hist=true#Ngrok-0) to know how to use each one or continue to the next section.
    
 - **[Ngrok](https://ngrok.com)**
   1. Follow the prompts.
@@ -84,7 +92,7 @@ Of course, it's possible but with a little hard work. Google Colab is a free ser
 > When writing your name you should just write the name before the first colon of the link (without the `.play.minekube`).
 
 # :zap:  So, how does it actually work?
-MInecolab [Improved] is an alternative Minecolab project. Therefore, it has all the main features, which the Minecolab project does: 
+MInecolab [Improved] is an alternative Minecolab project. Therefore, it has all the main features which the Minecolab project does: 
  
 1. Update the system's apt-cache.
 2. Install Openjdk-8 (For Minecraft versions below 1.17) or Openjdk-17 (For Minecraft versions over or in 1.17) through apt-get.
@@ -92,7 +100,7 @@ MInecolab [Improved] is an alternative Minecolab project. Therefore, it has all 
 4. Setup Argo/ngrok/playit Tunnel (Opening a tunnel at port 25565) depending on the `tunnel_service` variable.
 5. Change the directory to the Minecraft server folder on Google Drive ("Minecraft-server" is the default, located in the root directory of your Google Drive.)
 6. List/Print the file list on the screen to indicate successful directory change.
-7. Startup the Minecraft server (with optimized JVM parameters from [Aikar's guide)](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/) and from GC logging
+7. Startup the Minecraft server (with optimized JVM parameters from [Aikar's guide)](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/) and from GC logging.
 
 Additionally, Minecolab [Improved] has more new features:
 
@@ -116,6 +124,7 @@ Additionally, Minecolab [Improved] has more new features:
     - Mohist: Use Mohist, which combines Forge and Fabric.
     - Banner: Deploy a Banner server.
     - Velocity: Set up a Velocity proxy server.
+9. Continued developing to improve each version and mantain up to date!
         
 ## 🔮 **License:**   
 [![License](https://camo.githubusercontent.com/966484ce4d3faab2d9803e7354431ff8e4fce6a424e97689f05b2f50f4ee424b/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f497a7a656c416c697a2f4172636c696768743f7374796c653d666c61742d737175617265)](https://github.com/N-aksif-N)
