@@ -24,7 +24,7 @@
 
 Mine Colab [Improved] is an alternative [Minecolab project](https://github.com/thecoder-001/MineColab) that helps to build a Minecraft server on your own [Google Drive](https://workspace.google.com/intl/es/products/drive). It is easier to use and more flexible to edit. This project is suited mainly for [Google Colab](https://colab.research.google.com), a paid service of Google with free plans based on [Jupyter Notebook](https://jupyter.org/) and [Ubuntu](https://ubuntu.com) OS. Anyway, this notebook can be used on other projects like [Jupyter Lab](https://jupyter.org/try-jupyter/lab/), [Deepnote](https://deepnote.com/), etc... taking into account it may require some modifications depending on the service. This project follows the [GNU License](https://github.com/N-aksif-N/Minecolab/blob/master/LICENSE). Before looking closer to it, please make sure to take a look into [the original project by thecoder-001](https://github.com/thecoder-001/MineColab)
 
-# :moneybag:  Can Minecolab server online 24/7?
+# :moneybag:  Can MCI run your server online 24/7?
 
 Of course, it's possible but with a little hard work. Google Colab is a free service and it is not suited for 24/7, but 12 hours online so in the case you want your server to be accesible 24/7 you could use [Deepnote](https://deepnote.com/) instead.
 > [!WARNING]  
