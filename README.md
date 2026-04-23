@@ -1,3 +1,5 @@
+> [!CAUTION]  
+> Google Colab has permanently auto-banned MineColab Improved projects from their system. Any user trying to use MCI will be automatically stopped from running environments, and if persistent it will banned.
 <p align="center"><a href="https://github.com/N-aksif-N/MineColab"><img src="https://raw.githubusercontent.com/N-aksif-N/MineColab/master/MineColab_Improved.png" alt="Logo" height="150"/></a></p>
 <h1 align="center">Mine Colab [Improved]</h1>
 <p align="center">Run Minecraft Server on Google Colab</p>
